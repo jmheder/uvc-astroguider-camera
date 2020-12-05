@@ -2,7 +2,7 @@
 #include "i2c.h"
 #include "spi.h"
 #include "sensor.h"
-//#include "arducam.h"
+#include "arducam.h"
 
 void application(void)
 {
@@ -11,6 +11,9 @@ void application(void)
 	spi_setup();
 	usb_setup();
 	sensor_setup();
+        arducam_setup();
+        flash_setup();
+
 #if 0
 	// run the main loop
 	while (1)
