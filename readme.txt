@@ -1,4 +1,4 @@
-This project is about creating a Astro Guider using the STM32F103 platform and the OV7725 sensor. The project utilizes the ArduCam protocol and some of the code, thus making it ArduCam compatible. 
+This project is about creating a Astro Guider using the STM32F103 platform and the OV7725 sensor. The project aim to build the system as UVC device streaming device, avoiding any needs to specific windows drivers.  
 
 Board
 The Board used is known as the bluepill board featuring a STM32F103CBT processor running at 72 Mhz. The processor has 64 kB Ram and 20 kB ROM.
@@ -11,12 +11,11 @@ Flash
 The system will feature an optional spi-flash which might be used in future development for image storage  and similar.
 
 Windows Software
-ArduCam windows software and drivers
+Standard windows UVC drivers
 
 Embedded Software
 CubeMX 
-Stm32f1 peripheral library
-ArduCam drivers for OV7725 
-Compiler is GCC
+STM32_USB_Device_Library
+GCC
 
 
